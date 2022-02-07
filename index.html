@@ -1,18 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Ahorcado</title>
-    <!---JS--->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Ahorcado JS</title>
     <script defer src="js/main.js"></script>
-    <!---End JS--->
+    <style>
+        body {
+            text-align: center;
+        }
+        .mensaje {
+            display: none;
+        }
+        .mensaje--show {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <h1>Ahorcado JS</h1>
-    <p id="visual-jugador"></p>
-    <input type="text" id="nueva-letra" maxlength="1" required placeholder="Letra"> (Presiona enter)
-    <p>Intentos Restantes <span id="contador"></span></p>
-    <h2>Tus Letras</h2>
-    <p id="letras-jugador"></p>
+<h1>Ahorcado JS</h1>
+<h2 class="mensaje" id="mensaje-ganado">Has ganado</h2>
+<h2 class="mensaje" id="mensaje-perdido">Has perdido</h2>
+<h3 id="visual-jugador"></h3>
+<input id="nueva-letra" type="text" maxlength="1" required placeholder="Letra..."> (Pulsa enter)
+<h2>Numero de intentos restantes</h2>
+<p id="numero-intentos"></p>
+<h2>Tus letras</h2>
+<p id="letras-jugador"></p>
 </body>
 </html>
